@@ -29,17 +29,17 @@ body {
 }
 
 .segundos {
-    background: red;
+    background: black;
     animation: rotate 60s infinite linear;
 }
 
 .minutos {
-    background: blue;
+    background: black;
     animation: rotate 3600s infinite linear;
 }
 
 .horas {
-    background: green;
+    background: red;
     width: 25%;
     animation: rotate 43200s infinite linear;
 }
