@@ -18,17 +18,17 @@
 }
 
 .segundos {
-    background: rgb(0, 0, 0);
+    background: black;
     animation: rotate 60s infinite linear;
 }
 
 .minutos {
-    background: rgb(0, 0, 0);
+    background: black;
     animation: rotate 3600s infinite linear;
 }
 
 .horas {
-    background: rgb(255, 0, 0);
+    background: red;
     width: 25%;
     animation: rotate 43200s infinite linear;
 }
