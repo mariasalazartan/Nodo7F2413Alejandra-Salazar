@@ -1,0 +1,242 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #121212; /* Fondo oscuro */
+    color: #ddd; /* Texto claro */
+}
+
+header {
+    background: linear-gradient(135deg, #333, #555); /* Fondo con gradiente */
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid #ff5733; /* Línea inferior con color vibrante */
+}
+
+nav .menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* Ocultar botón en pantallas grandes */
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 1rem;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #ff5733; /* Color vibrante al pasar el cursor */
+    text-decoration: underline;
+}
+
+.section {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 2rem auto; /* Espacio entre secciones */
+    background-color: #1e1e1e; /* Fondo oscuro para secciones */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+    opacity: 0.5;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.section:hover::before {
+    opacity: 0.7;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff5733; /* Color vibrante para los títulos */
+    border-bottom: 2px solid #ff5733;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.news-item, .featured-article {
+    margin-bottom: 2rem;
+}
+
+.news-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    object-fit: cover; /* Mantiene la relación de aspecto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-image:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+.news-content {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px; /* Redondear bordes del video */
+}
+
+.featured-article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.featured-article iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada para destacar el video */
+    max-width: 100%; /* Asegura que el video no se desborde */
+}
+
+.show-more {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.show-more:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background: linear-gradient(135deg, #333, #555); /* Fondo con gradiente */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ff5733; /* Cambia el color de fondo aquí */
+    border: 2px solid #ff5733; /* Borde colorido */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.read-more:hover,
+.read-more:focus {
+    background-color: #fff; /* Fondo blanco al pasar el cursor */
+    color: #ff5733; /* Texto colorido */
+    border-color: #ff5733; /* Borde colorido */
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+}
+
+.read-more:active {
+    background-color: #004080; /* Cambia el color de fondo cuando se hace clic en el enlace */
+    transform: translateY(0); /* Reestablece la posición cuando se hace clic */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Muestra el botón en pantallas pequeñas */
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #333;
+        width: 100%;
+        z-index: 1;
+        padding: 1rem;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+
+    .featured-article iframe {
+        height: 200px; /* Ajusta la altura del video en pantallas pequeñas */
+    }
+}

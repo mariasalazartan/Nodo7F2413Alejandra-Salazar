@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fondo oscuro */
+    color: #ddd; /* Texto claro */
+}
+
+
+/* Section Styles */
+.section {
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 1000px;
+    background-color: #1e1e1e; /* Fondo oscuro para secciones */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    overflow: hidden; /* Asegura que los elementos internos no se salgan del contenedor */
+}
+
+/* Títulos de secciones */
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff5733; /* Color vibrante para los títulos */
+    border-bottom: 2px solid #ff5733;
+    padding-bottom: 10px;
+}
+
+/* Formulario de Registro */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    padding-left: 40px; /* Espacio para el ícono */
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #333;
+    color: #ddd;
+    font-size: 1em;
+    box-sizing: border-box; /* Incluye el padding y border en el width */
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #ff5733;
+    outline: none;
+}
+
+.form-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff5733;
+    font-size: 1.2em; /* Tamaño del ícono */
+}
+
+/* Botón de Registro */
+button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #ff5733;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e94e2e;
+    transform: translateY(-3px);
+}
+

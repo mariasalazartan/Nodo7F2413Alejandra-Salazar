@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión - Måneskin</title>
+    <link rel="stylesheet" href="login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k6S3yx2Bnd+Db8OB+b9zJ5D3sD5TME3d0eZT6xsiVORt2G4HGksjwxoxpXxr4fnbb/n3v3Dz0s3eg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="background">
+        <!-- Formulario de Login -->
+        <section id="login" class="section">
+            <h1 class="section-title">Iniciar Sesión</h1>
+            <form id="loginForm">
+                <div class="form-group">
+                    <i class="fas fa-user"></i>
+                    <label for="username">Nombre de usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="form-group">
+                    <i class="fas fa-lock"></i>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Obtener usuarios registrados del localStorage
+            let users = JSON.parse(localStorage.getItem('users')) || [];
+
+            // Verificar si el usuario existe y si la contraseña coincide
+            let user = users.find(user => user.username === username && user.password === password);
+
+            if (user) {
+                alert('Inicio de sesión exitoso');
+                // Redirigir a la página del artista después del inicio de sesión exitoso
+                window.location.href = "/artista/artista.html";
+            } else {
+                alert('Nombre de usuario o contraseña incorrectos o el usuario no está registrado');
+            }
+        });
+    </script>
+</body>
+</html>

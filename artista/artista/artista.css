@@ -1,0 +1,389 @@
+/* Estilo para el cuerpo y fuente general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6; /* Mejorar la legibilidad */
+}
+
+header {
+    background: #333; /* Fondo oscuro para el header */
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-bottom: 3px solid #ff5733; /* Línea inferior con color vibrante */
+}
+
+nav .menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* Ocultar botón en pantallas grandes */
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 1rem;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #ff5733; /* Color vibrante al pasar el cursor */
+    text-decoration: underline;
+}
+
+/* Estilo para el contenido principal */
+.main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo de la sección de héroe */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('https://example.com/hero-bg.jpg') no-repeat center center/cover;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #cc0000;
+}
+
+/* Estilo para las secciones */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* Estilo para la sección de biografía y miembros */
+.hero img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+}
+
+.miembros {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Agrega espacio entre los elementos */
+}
+
+.miembros li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 350px; /* Ajusta el ancho máximo para pantallas grandes */
+    padding: 10px;
+    background-color: #1a1a1a; /* Fondo oscuro para resaltar */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agrega sombra para profundidad */
+}
+
+.miembros img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Agrega sombra a las imágenes */
+}
+
+.miembros div {
+    flex: 1;
+    color: #ffffff; /* Color de texto blanco para contraste */
+}
+
+/* Media Queries para mantener la visualización en dispositivos móviles */
+@media (max-width: 768px) {
+    .miembros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .miembros li {
+        max-width: 90%;
+    }
+
+    .miembros img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Estilo para el contenedor de la discografía */
+.discography {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.album {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 15px;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.album h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.album ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.album ul li {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .album {
+        width: 90%;
+    }
+}
+
+/* Estilo para la sección de videos */
+.video-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-container iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el área de reproducción de audio */
+audio {
+    display: none;
+}
+
+/* Estilo para CTA */
+.cta {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cta .btn {
+    margin: 0 10px;
+}
+
+/* Estilo para los botones */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.boton-izquierda {
+    background-color: #007BFF;
+}
+
+.boton-izquierda:hover {
+    background-color: #0056b3;
+}
+
+.boton-derecha {
+    background-color: #28a745;
+}
+
+.boton-derecha:hover {
+    background-color: #218838;
+}
+
+/* Estilo para la sección de canciones más escuchadas */
+.playlist {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.playlist img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.playlist button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.playlist button:hover {
+    background-color: #555;
+}
+
+/* Estilo para la sección de Spotify */
+.spotify {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.spotify iframe {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    height: 352px;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Muestra el botón en pantallas pequeñas */
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #333;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+
+    .playlist button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}

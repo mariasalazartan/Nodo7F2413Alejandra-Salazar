@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fondo oscuro */
+    color: #ddd; /* Texto claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e; /* Fondo del formulario */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #ff5733;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    padding-left: 40px; /* Espacio para el ícono */
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #333;
+    color: #ddd;
+    font-size: 1em;
+    box-sizing: border-box; /* Incluye el padding y border en el width */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #ff5733;
+    box-shadow: 0 0 8px rgba(255, 87, 51, 0.5);
+    outline: none;
+}
+
+.form-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff5733;
+    font-size: 1.2em; /* Tamaño del ícono */
+}
+
+/* Botón de Login */
+button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #ff5733;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #e94e2e;
+    transform: translateY(-3px);
+}
