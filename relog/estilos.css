@@ -1,10 +1,21 @@
-
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Fondo degradado */
+}
 
 .clock {
     position: relative;
     width: 300px;
     height: 300px;
     margin: 0 auto;
+    border: 15px solid white;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 35%, rgba(255,255,255,1) 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .segundos, .minutos, .horas {
