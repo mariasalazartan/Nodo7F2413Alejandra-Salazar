@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <form id="formulario" method="post">
+        <h1>Formulario de Inscripción</h1>
+        <ul>
+            <li><label for="nombre">Nombre:</label></li>
+            <li><input type="text" id="nombre" name="nombre" placeholder="Nombre" required></li>
+            <li><label for="apellido">Apellido:</label></li>
+            <li><input type="text" id="apellido" name="apellido" placeholder="Apellido" required></li>
+            <li><label for="correo">Correo:</label></li>
+            <li><input type="email" id="correo" name="correo" placeholder="Correo" required></li>
+            <li><label for="direccion">Dirección:</label></li>
+            <li><input type="text" id="direccion" name="direccion" placeholder="Dirección"></li>
+            <li><label for="departamento">Departamento:</label></li>
+            <li><input type="text" id="departamento" name="departamento" placeholder="Departamento"></li>
+            <li><label for="pais">País:</label></li>
+            <li><input type="text" id="pais" name="pais" placeholder="País" required></li>
+            <li><label for="telefono">Teléfono de Contacto:</label></li>
+            <li><input type="tel" id="telefono" name="telefono" placeholder="Teléfono de Contacto"></li>
+            <li><label for="descripcion">Descripción Personal:</label></li>
+            <li><textarea id="descripcion" name="descripcion" placeholder="Descripción Personal" maxlength="300"></textarea></li>
+            <li><label for="carrera">¿A qué carrera deseas inscribirte?</label></li>
+            <li>
+                <select id="carrera" name="carrera[]" multiple required>
+                    <option value="jobs">Jobs to be done</option>
+                    <option value="cloud">Cloud Native</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="fundamentals">Fundamentals</option>
+                    <option value="python">Python</option>
+                    <option value="marketing">Marketing Digital</option>
+                </select>
+            </li>
+            <li><label for="modalidad">Modalidad:</label></li>
+            <li>
+                <input type="radio" id="presencial" name="modalidad" value="presencial" required>
+                <label for="presencial">Presencial</label>
+            </li>
+            <li>
+                <input type="radio" id="digital" name="modalidad" value="digital" required>
+                <label for="digital">Digital</label>
+            </li>
+            <li><label for="trabajo">¿Estás trabajando actualmente?</label></li>
+            <li>
+                <input type="radio" id="si" name="trabajo" value="si">
+                <label for="si">Sí</label>
+            </li>
+            <li>
+                <input type="radio" id="no" name="trabajo" value="no">
+                <label for="no">No</label>
+            </li>
+        </ul>
+        <input type="submit" value="Enviar Formulario">
+        <input type="reset" value="Resetear Formulario">
+    </form>
+</body>
+</html>

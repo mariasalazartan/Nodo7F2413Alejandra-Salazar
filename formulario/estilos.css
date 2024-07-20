@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradient {
+    0% {background-color: #ffff00;}
+    5% {background-color: #d9ff00;}
+    10% {background-color: #b3ff00;}
+    15% {background-color: #8dff00;}
+    20% {background-color: #66ff00;}
+    25% {background-color: #40ff00;}
+    30% {background-color: #1aff00;}
+    35% {background-color: #00ff15;}
+    40% {background-color: #00ff40;}
+    45% {background-color: #00ff66;}
+    50% {background-color: #00ff8d;}
+    55% {background-color: #00ff00;}
+    60% {background-color: #15ff00;}
+    65% {background-color: #40ff00;}
+    70% {background-color: #66ff00;}
+    75% {background-color: #8dff00;}
+    80% {background-color: #b3ff00;}
+    85% {background-color: #d9ff00;}
+    90% {background-color: #ffff00;}
+    95% {background-color: #d9ff00;}
+    100% {background-color: #b3ff00;}
+}
+
+form {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333333;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #007bff;
+    border-radius: 6px;
+    margin-top: 5px;
+    font-size: 1em;
+    background-color: #f5faff;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin: 0 10px 0 0;
+}
+
+input[type="submit"], input[type="reset"] {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    color: #000000;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"] {
+    background-color: #4dff00;
+}
+
+input[type="submit"]:hover {
+    background-color: #3b9d00;
+}
+
+input[type="reset"] {
+    background-color: #eeff00;
+}
+
+input[type="reset"]:hover {
+    background-color: #ffd700;
+}
+
+fieldset {
+    border: 2px solid #12d2ef;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #f5faff;
+}
+
+legend {
+    color: #047dff;
+    font-weight: bold;
+    font-size: 1.2em;
+}
